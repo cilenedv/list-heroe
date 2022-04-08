@@ -1,0 +1,10 @@
+<br>
+<h1>Héroes <span>Marvel y DC</span></h1>
+<hr>
+<div  class="bd-example">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- *ngFor="let heroe of heroes; let i = index" -->
+        <app-heroe-tarjeta [heroe]="heroe" [id]="heroe.id" *ngFor="let heroe of heroes" ></app-heroe-tarjeta>
+    </div>
+
+</div>
